@@ -1,0 +1,195 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title Document
+        link(rel='stylesheet', href='./css/homePage.css')
+        link(rel='stylesheet', href='./css/footer.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css')
+    body
+        .showcase
+            include navbar.pug
+            .text-box
+                h1.main-heading
+                    | MEAL PLANS.
+                    br
+                    | FOR 
+                    span#span-detector EVERYONE
+                .button-container
+                    .book-now
+                        a(href='#') Book Now
+                    .show-me-more
+                        a(href='#') Show Me More
+        .section-1
+            h2.subheading1 AWESOME FEATURES
+            .card-container
+                .card-item
+                    i.fas.fa-calendar-week.icon
+                    h3.card-heading 365 DAYS/YEAR
+                    p.card-text
+                        | Never cook again! We really mean that.
+                        | Our subscription plans include up to 365 days/year coverage.You can also
+                        | choose to order more flexibly if that's your style.
+                .card-item
+                    i.fas.fa-truck.icon
+                    h3.card-heading 30 MINUTES OR FREE
+                    p.card-text
+                        | You're only twenty minutes away from your delicious
+                        | and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure
+                        | that you're 100% happy.
+                .card-item
+                    i.fas.fa-carrot.icon
+                    h3.card-heading 100% ORGANIC
+                    p.card-text
+                        | All vegetables are fresh,organic and local. Animals are raised without added hormones
+                        | or antibiotics. Good for your health, the environment and it also tastes better !
+        .section-2
+            h2.subheading2 STEPS TO FOLLOW
+            .section-container
+                .image-container
+                    img.app-image(src='./img/stepimage.png', alt='App Image')
+                .steps-container
+                    .steps-item
+                        h2.step-item-number 1
+                        p.step-item-text
+                            | Choose the subscription plan
+                            | that best fits your needs and sign up today.
+                    .steps-item
+                        h2.step-item-number 2
+                        p.step-item-text
+                            | Order your delicious meal using our
+                            | mobile app or website. Or you can even call us!
+                    .steps-item
+                        h2.step-item-number 3
+                        p.step-item-text Enjoy your meal after less than 20 minutes.See you the next time!
+        .section-3
+            h2.subheading3 REVIEWS
+            .review-container
+                .review-item
+                    h3.review-name SHAURYA LUTHRA
+                    p.review-text
+                        | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum ad accusamus eveniet ab tempora inventore,
+                        | earum maiores ipsum quam esse enim eius asperiores quibusdam, non temporibus perspiciatis iusto quis fuga!
+                    .review-stars
+                        i.fas.fa-star.review-icon
+                        i.fas.fa-star.review-icon
+                        i.fas.fa-star.review-icon
+                        i.fas.fa-star.review-icon
+                        i.fas.fa-star.review-icon
+                .review-item
+                    h3.review-name SACHIT JAGGI
+                    p.review-text
+                        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam alias sunt rerum! Qui quos culpa repellendus ea nisi.
+                        | Quaerat temporibus quisquam voluptas facilis amet dolore recusandae voluptate suscipit, dolorem sequi!
+                    .review-stars
+                        i.fas.fa-star.review-icon
+                        i.fas.fa-star.review-icon
+                        i.fas.fa-star.review-icon
+                        i.fas.fa-star.review-icon
+                        i.fas.fa-star.review-icon
+                .review-item
+                    h3.review-name NAMAN TANEJA
+                    p.review-text
+                        | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque sapiente quaerat suscipit enim quia. Dolores
+                        | perspiciatis nulla illum itaque eum iusto esse fugiat consequatur. Voluptatem corporis nostrum minima cumque blanditiis.
+                    .review-stars
+                        i.fas.fa-star.review-icon
+                        i.fas.fa-star.review-icon
+                        i.fas.fa-star.review-icon
+                        i.fas.fa-star.review-icon
+                        i.fas.fa-star.review-icon
+        .section-4
+            h2.subheading4 PLANS
+            .plan-container
+                .plan-item
+                    h3.plan-name PREMIUM
+                    p.plan-rate
+                        span.price $399
+                        | /month
+                    h4.plan-name-tag That's only 13.30$ per meal
+                    ul.plan-list
+                        li.plan-list-item
+                            i.fas.fa-check
+                            h4 1 meal every day
+                        li.plan-list-item
+                            i.fas.fa-check
+                            h4 Order 24/7
+                        li.plan-list-item
+                            i.fas.fa-check
+                            h4 Access to newest creations
+                        li.plan-list-item
+                            i.fas.fa-check
+                            h4 Free delivery
+                    a.plan-button(href='#') I'm hungry
+                .plan-item.middle
+                    h3.plan-name PREMIUM
+                    p.plan-rate
+                        span.price $399
+                        | /month
+                    h4.plan-name-tag That's only 13.30$ per meal
+                    ul.plan-list
+                        li.plan-list-item
+                            i.fas.fa-check
+                            h4 1 meal every day
+                        li.plan-list-item
+                            i.fas.fa-check
+                            h4 Order 24/7
+                        li.plan-list-item
+                            i.fas.fa-check
+                            h4 Access to newest creations
+                        li.plan-list-item
+                            i.fas.fa-check
+                            h4 Free delivery
+                    a.plan-button(href='#') I'm hungry
+                .plan-item
+                    h3.plan-name PREMIUM
+                    p.plan-rate
+                        span.price $399
+                        | /month
+                    h4.plan-name-tag That's only 13.30$ per meal
+                    ul.plan-list
+                        li.plan-list-item
+                            i.fas.fa-check
+                            h4 1 meal every day
+                        li.plan-list-item
+                            i.fas.fa-check
+                            h4 Order 24/7
+                        li.plan-list-item
+                            i.fas.fa-check
+                            h4 Access to newest creations
+                        li.plan-list-item
+                            i.fas.fa-check
+                            h4 Free delivery
+                    a.plan-button(href='#') I'm hungry
+        .section-5
+            h2.subheading5 CONTACT US
+            .signup-container
+                .video-container
+                    video.background-video(src='./img/Avocado.mp4', autoplay='', muted='', loop='') Autoplay is not supperted.
+                .form-container
+                    form.signup-form(action='', target='_self', method='POST')
+                        .entry-container
+                            label(for='Name') Name
+                            input#Name(type='text', name='Name')
+                        .entry-container
+                            label(for='Email') Email
+                            input#Email(type='email', name='Email')
+                        .entry-container
+                            label(for='Options') How did you find us ?
+                            input(list='Options', name='Options')
+                            datalist#Options
+                                option(value='Friends')
+                                option(value='Internet')
+                                option(value='Advertisement')
+                                option(value='Other')
+                        .entry-container
+                            label(for='Feedback') Drop us a line
+                            textarea#Feedback(cols='30', rows='10', name='Feedback')
+                        .entry-container.check
+                            input#Checkbox(type='checkbox', name='Checkbox')
+                            p I agree with all Terms and Conditions
+                        button.submit-button(type='submit') Submit
+        include footer.pug
+        script(src="https://unpkg.com/axios/dist/axios.min.js" crossorigin="true")
+        script(src='../js/home.js')

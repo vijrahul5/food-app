@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/profilepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="navbar-list">
+               <li class="navbar-element"><a href="#">FEATURES</a></li>
+               <li class="navbar-element"><a href="#">DETAILS</a></li>
+               <li class="navbar-element"><a href="#">REVIEWS</a></li>
+               <li class="navbar-element"><a href="#">PLANS</a></li>
+               <li class="navbar-element"><a href="#">SIGNUP</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="middle">
+        <div class = "dashboard">
+            <div class="dashboard-menu">
+                <i class="fas fa-user-circle user-img"></i>
+                <div class="navigation">
+                    <ul>
+                        <li class="active" id="myprofilenav" onclick="sectionChange('myprofile')">My Profile</li>
+                        <li id="myplansnav" onclick="sectionChange('myplans')">My Plans</li>
+                        <li id="editpersonalinfonav" onclick="sectionChange('editpersonalinfo')">Edit Personal Info</li>
+                        <li id="editcomminfonav" onclick="sectionChange('editcomminfo')">Edit Communication Info</li>
+                        <li id="changepasswordnav" onclick="sectionChange('changepassword')">Change Password</li>
+                        <li id="writereviewnav" onclick="sectionChange('writereview')">Write A Review</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dashboard-container">
+                <ul class="myprofile" id="myprofile">
+                    <li><h2 class="tag">Name :</h2><h2 class="value">Rahul Vij</h2></li>
+                    <li><h2 class="tag">Email :</h2><h2 class="value">vijrahul5@gmail.com</h2></li>
+                    <li><h2 class="tag">City :</h2><h2 class="value">Gurgaon</h2></li>
+                    <li><h2 class="tag"> State :</h2><h2 class="value">Haryana</h2></li>
+                    <li><h2 class="tag">Address :</h2><h2 class="value">House No. 6, Sector 17 A, Opposite MDI</h2></li>
+                    <li><h2 class="tag">Pincode :</h2><h2 class="value">122001</h2></li>
+                    <li><h2 class="tag">Contact Number :</h2><h2 class="value">9717423429</h2></li>
+                </ul>
+                <div class="form-container hide" id="editpersonalinfo">
+                    <form action="" class="signup-form" target="_self" method="POST">
+                        <div class="entry-container">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="eame">
+                        </div>
+                        <div class="entry-container">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <button type="submit" class="submit-button">Save</button>
+                    </form>
+                </div>
+                <div class="form-container hide" id="editcomminfo">
+                    <form action="" class="signup-form" target="_self" method="POST">
+                        <div class="entry-container">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city">
+                        </div>
+                        <div class="entry-container">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state">
+                        </div>
+                        <div class="entry-container">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address">
+                        </div>
+                        <div class="entry-container">
+                            <label for="pincode">Pincode</label>
+                            <input type="text" id="pincode" name="pincode">
+                        </div>
+                        <div class="entry-container">
+                            <label for="contact">Contact Number</label>
+                            <input type="number" id="contact" name="contact">
+                        </div>
+                        <button type="submit" class="submit-button">Save</button>
+                    </form>
+                </div>
+                <div class="form-container hide" id="changepassword">
+                    <form action="" class="signup-form" target="_self" method="POST">
+                        <div class="entry-container">
+                            <label for="password">New Password</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div class="entry-container">
+                            <label for="confirmPassword">Confirm New Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword">
+                        </div>
+                        <button type="submit" class="submit-button">Save</button>
+                    </form>
+                </div>
+                <div class="hide" id="myplans"></div>
+                <div class="hide" id="writereview"></div>
+            </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-links">
+            <div class="footer-app-links">
+                <a href="#" class="footer-app-text">About Us</a>
+                <a href="#" class="footer-app-text">ios App</a>
+                <a href="#" class="footer-app-text">Android App</a>
+            </div>
+            <div class="footer-media-links">
+                <a href="#" class="footer-media-icon"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" class="footer-media-icon"><i class="fab fa-twitter-square"></i></a>
+                <a href="#" class="footer-media-icon"><i class="fab fa-instagram-square"></i></a>
+            </div>
+        </div>
+        <h2 class="footer-copyright">Copyright &copy; 2020 Everyone. All Rights Reserved</h2>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>

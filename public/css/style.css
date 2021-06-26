@@ -1,0 +1,28 @@
+.subheading{
+    font-size: 220%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color:grey;
+    margin-top: 4rem;
+    text-align: center;
+}
+.subheading:after{
+    content: "";
+    display: block;
+    height: 0.3rem;
+    width: 10%;
+    background-color: #e74c3c;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+.para-text{
+    width: 65%;
+    margin: auto;
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 120%;
+    font-weight: 10;
+    font-family: Arial, Helvetica, sans-serif;
+    color:grey;
+    line-height:30px;
+}

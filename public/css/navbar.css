@@ -1,0 +1,126 @@
+.navbar{
+    background-color:black;
+    width: 100%;
+    overflow: auto;
+    align-items: center;
+}
+.navbar-list{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+.navbar-element a{
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 5px;
+}
+.navbar-element a:hover{
+    border-bottom: 1.5px solid #e74c3c;
+}
+.navbar-element{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+    font-weight: 100;
+    margin-right: 2rem;
+    padding: 15px 0px;
+}
+.sticky-bar{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    border-bottom: 2px solid grey;
+    z-index: 10;
+    opacity: 90%;
+}
+.sticky-bar .navbar-list{
+    margin: 0;
+}
+.sticky-bar .navbar-list .navbar-element{
+    color: grey;
+}
+.sticky-bar .profile-icon{
+    color: grey;
+}
+.profile-icon{
+    font-size: 2rem;
+    color: white;
+}
+.profile-submenu{
+    display: none;
+}
+
+.navbar-list:last-child :hover .profile-submenu{
+    display: block;
+    position: absolute;
+    width: 150px;
+    background-color: gainsboro;
+    margin-top: 15px;
+    margin-left: -90px;
+    opacity: 80%;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: auto;
+}
+.navbar-list:last-child :hover .profile-submenu li{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    font-weight: 100;
+    text-align: center;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    list-style: none;
+    padding: 0.8rem;
+}
+.navbar-list:last-child :hover .profile-submenu li:last-child{
+    border-bottom: none;
+    padding-bottom: 1rem;
+
+}
+
+.navbar-list:last-child :hover .profile-submenu li a:hover{
+    border-bottom: none;
+}
+.navbar-list:last-child :hover .profile-submenu li:hover{
+    background-color: white;
+}
+
+.sticky-bar .navbar-list:last-child :hover .profile-submenu{
+    display: block;
+    position: fixed;
+    width: 150px;
+    background-color: gainsboro;
+    margin-top: 17px;
+    margin-left: -90px;
+    border: 1px solid black;
+    border-top: none;
+    opacity: 80%;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.sticky-bar .navbar-list:last-child :hover .profile-submenu li{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    border-bottom: 1px solid black;
+    font-weight: 100;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    padding: 0.8rem;
+}
+.sticky-bar .navbar-list:last-child :hover .profile-submenu li:last-child{
+    border-bottom: none;
+}
+
+.sticky-bar .navbar-list:last-child :hover .profile-submenu li a:hover{
+    border-bottom: none;
+}

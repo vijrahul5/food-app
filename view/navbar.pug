@@ -1,0 +1,34 @@
+.navbar
+    ul.navbar-list
+        li.navbar-element
+            a(href='/') Features
+        li.navbar-element
+            a(href='#') Details
+        li.navbar-element
+            a(href='#') Reviews
+        li.navbar-element
+            a(href='/plans') Plans
+        if name
+            li.navbar-element
+                i.fas.fa-user-circle.profile-icon
+                if role == "user"
+                    ul.profile-submenu
+                        li
+                            a(href='') My Profile
+                        li
+                            a(href='') My Plans
+                        li
+                            a(href='') Sign Out
+                else
+                    ul.profile-submenu
+                        li
+                            a(href='') My Profile
+                        li
+                            a(href='') Manage Plans
+                        li
+                            a(href='') Manage Users
+                        li
+                            a(href='') Sign Out
+        else
+            li.navbar-element
+                a(href='./signin') Sign in

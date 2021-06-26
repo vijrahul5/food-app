@@ -1,0 +1,13 @@
+extends base.pug
+block content
+    .subheading PLANS
+    p.para-text
+        | Amazing meal plans for amazing people. We offer a large variety of
+        | subscription options for every customer. The meals provided under these
+        | subscriptions are made in our own kitchen with fresh vegetables and meat by our
+        | wonderful chefs.
+    .plan-container
+        for plan in plans
+            include planCard
+block attachcss
+    link(rel="stylesheet", href="./css/planpage.css")

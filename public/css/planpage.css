@@ -1,0 +1,94 @@
+.plan-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    /* height: 70%; */
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 25rem;
+    align-items: center;
+}
+.plan-item{
+    width: 320px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 10%;
+    margin-top: 5rem;
+    padding: 30px 20px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+.plan-name{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 110%;
+    font-weight: 100;
+    
+}
+.plan-rate{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+.price{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e74c3c;
+    font-weight: 1;
+    font-size: 2.8rem;
+}
+.plan-name-tag{
+    margin-top: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 90%;
+    font-weight: 2;
+}
+.plan-name-tag:after{
+    display: block;
+    margin-top: 1.5rem;
+    content: "";
+    height: 0.1rem;
+    background-color: gray;
+}
+.plan-list{
+    margin-top: 1.5rem;
+}
+.plan-list-item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+.plan-list-item i{
+    color: #e74c3c;
+    margin-right: 1rem;
+}
+.plan-list-item h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 90%;
+    font-weight: 2;
+}
+.plan-list:after{
+    display: block;
+    margin-top: 1.5rem;
+    content: "";
+    height: 0.05rem;
+    background-color: gray;
+}
+.plan-button{
+    position: absolute;
+    top: 432px;
+    left: 128px;
+    z-index: 1;
+    text-decoration: none;
+    color: white;
+    padding: 1.2rem;
+    background-color: #e74c3c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    border-radius: 60px;
+}

@@ -1,0 +1,56 @@
+extends base.pug
+block content
+    //- .back-img
+    .signin-container
+        .signin-select
+            .signup-text.switch(onclick="formhandler('signup')") Sign Up
+            .login-text(onclick="formhandler('login')") Log in
+        .signin-check
+            .signup
+                .form-container
+                    form.signup-form
+                        .entry-container
+                            label(for='name') Name
+                            input#name(type='text', name='eame')
+                        .entry-container
+                            label(for='email') Email
+                            input#email(type='email', name='email')
+                        .entry-container
+                            label(for='password') Password
+                            input#password(type='password', name='password')
+                        .entry-container
+                            label(for='confirmPassword') Confirm Password
+                            input#confirmPassword(type='password', name='confirmPassword')
+                        .entry-container
+                            label(for='city') City
+                            input#city(type='text', name='city')
+                        .entry-container
+                            label(for='state') State
+                            input#state(type='text', name='state')
+                        .entry-container
+                            label(for='address') Address
+                            input#address(type='text', name='address')
+                        button.submit-button(type='submit') Create Account
+            .login.hide
+                .form-container
+                    form.signup-form
+                        .entry-container
+                            label(for='email') Email
+                            input#email(type='email', name='email')
+                        .entry-container
+                            label(for='password') Password
+                            input#password(type='password', name='password')
+                        button.submit-button(type='submit') Log In
+                a Forgot Password ?
+                .form-container.hide.resetform
+                    form.signup-form
+                        .entry-container
+                            label(for='email') Email
+                            input#email(type='email', name='email')
+                        button.submit-button(type='submit') Send Reset Link
+                
+block attachcss
+    link(rel="stylesheet", href="./css/signinpage.css")
+block attachjs
+    script(src="./js/signin.js")
+    

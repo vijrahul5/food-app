@@ -1,0 +1,15 @@
+.plan-item
+    h3.plan-name #{plan.name}
+    p.plan-rate
+        span.price $#{plan.price}
+        | /month
+    h4.plan-name-tag That’s only #{Math.ceil(plan.price/plan.duration)}$ per meal
+    ul.plan-list
+        li.plan-list-item
+            i.fas.fa-check
+            h4 Rating - #{plan.rating}
+        for feature in plan.features
+            li.plan-list-item
+                i.fas.fa-check
+                h4 #{feature}
+    a.plan-button(href='#') I'm hungry

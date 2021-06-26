@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.form-container{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.signup-form{
+    width: 70%;
+    margin: auto;
+    padding: 2rem 0rem;
+}
+.entry-container{
+    margin-bottom: 1.25rem;
+    width: 100%;
+}
+.entry-container label{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 80%;
+    font-weight: 2;
+    margin-bottom: 0.25rem;
+
+}
+.entry-container input{
+    width: 100%;
+    padding: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 80%;
+    font-weight: 2;
+    border: 1px solid grey;
+    /* border-radius: 5px; */
+}
+.entry-container textarea{
+    width: 100%;
+    padding: 0.75rem;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 80%;
+    font-weight: 2;
+    
+
+}
+.entry-container datalist{
+    width: 100%;
+    height: 1.5rem;
+}
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.check input{
+    width: 5%;
+    margin-right: 0.75rem;
+}
+.check p{
+    width: 59%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 85%;
+    font-weight: 2;
+}
+.submit-button{
+    background-color: #e74c3c;
+    color:rgb(252, 245, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 1.5;
+    padding:1rem;
+    border: 1.5px solid #e74c3c;
+    border-radius: 60px;
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+.submit-button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transform: 1s;
+}
+.middle{
+    display: flex;
+    width: 100%;
+    height: 160vh;
+    vertical-align: center;
+}
+.signin-container{
+    width: 45%;
+    height: 61%;
+    background-color: white;
+    vertical-align: center;
+    margin: auto;
+    border-radius: 35px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+.signin-select{
+    width: 40%;
+    height: 6%;
+    margin: auto;
+    margin-top:1.5rem;
+    /* margin-bottom: 3rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #e74c3c;
+    border-radius: 60px;
+    overflow: hidden;
+}
+.signup-text{
+    width: 50%;
+    /* height: 100%; */
+    color:#e74c3c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 1.5;
+    padding:1rem;
+    text-align: center;
+    
+}
+.signup-text:hover{
+    cursor: pointer;
+    transform: scale(1.05);    
+}
+
+.login-text{
+    width: 50%;
+    /* height: 100%; */
+    color:#e74c3c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 1.5;
+    padding:1rem;
+    text-align: center;
+    
+}
+.login-text:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.signin-check{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup{
+    width: 100%;
+    /* display: none; */
+}
+.middle{
+    /* width: 50%; */
+    /* height: 100%; */
+    background-image:
+    linear-gradient(to bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.7)), url("../img/cook-cooking-cuisine-delicious-357737.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    
+
+}
+.signin-form{
+    width: 65%;
+}
+.login{
+    width: 100%;
+}
+
+.switch{
+    background-color: #e74c3c;
+    color:rgb(252, 245, 245);
+}
+.hide{
+    display: none;
+}
+.login a{
+    display: block;
+    margin-right: 6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    font-weight: 2;
+    text-decoration: underline;
+    color: black;
+    text-align: right;
+    line-height: 2px;
+}
+.login a:hover{
+    cursor: pointer;
+    color: #e74c3c;
+}
